@@ -3,7 +3,7 @@
 
 
 # News Headline Generator (Abstractive)
-![Header](https://github.com/avithekkc/movie-reviews-sentiment-analysis/blob/main/images/p5-header.jpg?raw=true)
+![Header](https://github.com/avithekkc/news-headline-generator/blob/main/images/P5-Project.jpg?raw=true)
 ## Overview
 This project seeks to create a model that creates one line abstractive summary of a given news article. This model will help to get a quick idea on what the article is all about without having to read all whole news.
 
@@ -24,14 +24,18 @@ Because of the Computational resource limitation the model was trained on 100K N
  
  
 ## About Modeling Technique
-
+![LSTM Network](https://github.com/avithekkc/news-headline-generator/blob/main/images/LSTM%20WORKING.jpg?raw=True)
+## Train Vs Test Loss
+ TRAIN LOSS = 2.89  | TEST LOSS = 3.53
+ ![loss](https://github.com/avithekkc/news-headline-generator/blob/main/images/train_test_loss.png?raw=True)
 
 ##  Results
-2 classification models were performed to determine best fit:
-Logistic Regression and Multinomial Naive Bayes.
-The Logistic Regression Model reported to be the best model for predicting Sentiment from given movie review using TFIDF Technique.
+Using Seq2Seq LSTM Encoder Decoder model
 
-ACCURACY : 93%  ( TRAIN) and 91%  ( TEST)
+ROUGE (1) SCORE : 0.2254
+ROUGE (L) SCORE : 0.2110
+
+SPARSE CATEGORICAL ACCURACY : 55%  ( TRAIN) and 50%  ( TEST)
 
 The WebApp version of the project can be found here - [Github](https://github.com/avithekkc/news-headline-web-app)
 
@@ -50,5 +54,5 @@ The WebApp version of the project can be found here - [Github](https://github.co
 ├── data-cleaning.ipynb                 <- Cleaning of data to create final dataset.
 ├── LSTM.ipynb                          <- Data Modeling.
 ├── presentation.pdf                    <- Non Technical Presentation.
-└── readme.md                           <- README file for Quick overview on project.
+└── readme.md                           <- README for Quick overview on project.
 ```
